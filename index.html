@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" class="kmb-nuxt-site-html kmb-site-html" data-capo="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap">
+    <script src="https://kit.fontawesome.com/73d5e9ffaa.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo&family=Montserrat:wght@100;300;400;500;600;700&family=Playfair+Display:ital@0;1&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <style type="text/css" id="site-root-css">
+    :root {
+        --bodyBg: #000000;
+        --bodyColor: #ffffff;
+        --bodyFontFamily: 'Alegreya', serif;
+        --bodyFontSize: 18px;
+        --bodyFontWeight: 600;
+        --bodyFontStyle: normal;
+        --bodyLineHeight: 1.2;
+        --bodyTextTransform: inherit;
+        --bodyTextLetterSpacing: inherit;
+        --primaryFont: font-family: 'PT Serif', serif;
+        --secondaryFont: 'Alegreya', serif;
+        --pageContainer: 1150px;
+        --primaryColor: #96C2DB;
+        --secondaryColor: #E5EDF1;
+        --accentColor: #377F8E;
+        --mutedColor: #434445;
+        --fifthColor: #FFFFFF;
+        --sixthColor: #000000;
+        --seventhColor: #FFFFFF;
+        --whiteColor: #FFFFFF;
+        --blackColor: #000000;
+        --transparentColor: transparent;
+        --primaryBorder: 1px solid #96C2DB;
+        --secondaryBorder: 1px solid #E5EDF1;
+        --accentBorder: 1px solid #377F8E;
+        --borderRadius: 0;
+        --headerBg: #FFFFFF;
+        --headerColor: #377F8E;
+        --headerHoverColor: #96C2DB;
+        --headerActiveColor: #96C2DB;
+        --headerFontFamily: 'Alegreya', serif;
+        --headerFontSize: 16px;
+        --headerFontWeight: 400;
+        --headerFontStyle: normal;
+        --headerLineHeight: 1.2;
+        --headerTextTransform: inherit;
+        --headerStickyBg: #FFFFFF;
+        --headerStickyColor: #377F8E;
+        --headerStickyOpacityPercentage: 0;
+        --headerStickyBlur: 0;
+        --backToTopColor: #FFFFFF;
+        --backToTopBg: #377F8E;
+        --backToTopBorderColor: #377F8E;
+        --footerBg: #FFFFFF;
+        --footerColor: #377F8E;
+        --footerFontFamily: 'Alegreya', serif;
+        --footerFontSize: 16px;
+        --footerFontWeight: 400;
+        --footerFontStyle: normal;
+        --footerLineHeight: 1.2;
+        --footerTextTransform: inherit;
+        --headlineH1Color: #ffffff;
+        --headlineH1FontFamily: font-family: 'PT Serif', serif;
+        --headlineH1FontSize: 46px;
+        --headlineH1FontWeight: 700;
+        --headlineH1FontStyle: normal;
+        --headlineH1LineHeight: 1.2;
+        --headlineH1TextTransform: inherit;
+        --headlineH1TextDecoration: inherit;
+        --headlineH1LineVisible: block;
+        --headlineH1LineBg: #ffffff;
+        --headlineH2Color: #e6e6e6;
+        --headlineH2FontFamily: font-family: 'PT Serif', serif;
+        --headlineH2FontSize: 40px;
+        --headlineH2FontWeight: 700;
+        --headlineH2FontStyle: normal;
+        --headlineH2LineHeight: 1.2;
+        --headlineH2TextTransform: inherit;
+        --headlineH2TextDecoration: inherit;
+        --subTitleH3Color: #f0f0f0;
+        --subTitleH3FontFamily: 'Alegreya', serif;
+        --subTitleH3FontSize: 24px;
+        --subTitleH3FontWeight: 400;
+        --subTitleH3FontStyle: normal;
+        --subTitleH3LineHeight: 1.2;
+        --subTitleH3TextTransform: uppercase;
+        --subTitleH3TextDecoration: inherit;
+        --subTitleH4Color: #377F8E;
+        --subTitleH4FontFamily: 'Alegreya', serif;
+        --subTitleH4FontSize: 24px;
+        --subTitleH4FontWeight: 600;
+        --subTitleH4FontStyle: normal;
+        --subTitleH4LineHeight: 1.2;
+        --subTitleH4TextTransform: inherit;
+        --subTitleH4TextDecoration: inherit;
+        --bodyText1Color: #434445;
+        --bodyText1FontFamily: 'Alegreya', serif;
+        --bodyText1FontSize: 20px;
+        --bodyText1FontWeight: 400;
+        --bodyText1FontStyle: normal;
+        --bodyText1LineHeight: 1.6;
+        --bodyText1TextTransform: inherit;
+        --bodyText1TextDecoration: inherit;
+        --bodyText2Color: rgb(231, 231, 231);
+        --bodyText2FontFamily: 'Alegreya', serif;
+        --bodyText2FontSize: 18px;
+        --bodyText2FontWeight: 200;
+        --bodyText2FontStyle: normal;
+        --bodyText2LineHeight: 1.6;
+        --bodyText2TextTransform: inherit;
+        --bodyText2TextDecoration: inherit;
+        --bodyText3Color: #434445;
+        --bodyText3FontFamily: 'Alegreya', serif;
+        --bodyText3FontSize: 16px;
+        --bodyText3FontWeight: 200;
+        --bodyText3FontStyle: normal;
+        --bodyText3LineHeight: 1.6;
+        --bodyText3TextTransform: inherit;
+        --bodyText3TextDecoration: inherit;
+        --overline1Color: #434445;
+        --overline1FontFamily: 'Alegreya', serif;
+        --overline1FontSize: 18px;
+        --overline1FontWeight: 600;
+        --overline1FontStyle: normal;
+        --overline1LineHeight: 1.2;
+        --overline1TextTransform: uppercase;
+        --overline1TextDecoration: inherit;
+        --overline2Color: #434445;
+        --overline2FontFamily: 'Alegreya', serif;
+        --overline2FontSize: 16px;
+        --overline2FontWeight: 700;
+        --overline2FontStyle: normal;
+        --overline2LineHeight: 1.2;
+        --overline2TextTransform: uppercase;
+        --overline2TextDecoration: inherit;
+        --caption1Color: #434445;
+        --caption1FontFamily: 'Alegreya', serif;
+        --caption1FontSize: 20px;
+        --caption1FontWeight: 700;
+        --caption1FontStyle: normal;
+        --caption1LineHeight: 1.2;
+        --caption1TextTransform: inherit;
+        --caption1TextDecoration: inherit;
+        --caption2Color: #434445;
+        --caption2FontFamily: 'Alegreya', serif;
+        --caption2FontSize: 18px;
+        --caption2FontWeight: 400;
+        --caption2FontStyle: normal;
+        --caption2LineHeight: 1.2;
+        --caption2TextTransform: inherit;
+        --caption2TextDecoration: line-through;
+        --caption3Color: #434445;
+        --caption3FontFamily: 'Alegreya', serif;
+        --caption3FontSize: 14px;
+        --caption3FontWeight: 400;
+        --caption3FontStyle: normal;
+        --caption3LineHeight: 1.2;
+        --caption3TextTransform: inherit;
+        --caption3TextDecoration: inherit;
+        --fieldLabelColor: #377F8E;
+        --fieldLabelFontFamily: 'Alegreya', serif;
+        --fieldLabelFontSize: 18px;
+        --fieldLabelFontWeight: 600;
+        --fieldLabelFontStyle: normal;
+        --fieldLabelLineHeight: 1.2;
+        --fieldLabelTextTransform: inherit;
+        --fieldLabelTextDecoration: inherit;
+        --inputFieldColor: #434445;
+        --inputFieldBg: #FFFFFF;
+        --inputFieldBorderColor: #434445;
+        --inputFieldFocusBorderColor: #000000;
+        --inputFieldFontFamily: 'Alegreya', serif;
+        --inputFieldFontSize: 18px;
+        --inputFieldFontWeight: 400;
+        --inputFieldFontStyle: normal;
+        --inputFieldLineHeight: 1.2;
+        --inputFieldTextTransform: inherit;
+        --inputFieldTextDecoration: inherit;
+        --btnFontFamily: font-family: 'PT Serif', serif;
+        --btnFontSize: 17px;
+        --btnFontWeight: 600;
+        --btnFontStyle: normal;
+        --btnTextTransform: uppercase;
+        --btnTextDecoration: none;
+        --btnBg: #377F8E;
+        --btnHoverBg: #FFFFFF;
+        --btnColor: #FFFFFF;
+        --btnHoverColor: #377F8E;
+        --btnBorderColor: #377F8E;
+        --btnHoverBorderColor: #377F8E;
+        --btnBorderRadius: 0px;
+        --btnBorderWidth: 1px;
+        --btnBorderStyle: solid;
+        --btnPrimaryBg: #377F8E;
+        --btnPrimaryHoverBg: transparent;
+        --btnPrimaryColor: #FFFFFF;
+        --btnPrimaryHoverColor: #377F8E;
+        --btnPrimaryBorderColor: #377F8E;
+        --btnPrimaryHoverBorderColor: #377F8E;
+        --btnPrimaryDisabledBg: #96C2DB;
+        --btnPrimaryDisabledColor: #000000;
+        --btnSecondaryBg: transparent;
+        --btnSecondaryHoverBg: #377F8E;
+        --btnSecondaryColor: #377F8E;
+        --btnSecondaryHoverColor: #FFFFFF;
+        --btnSecondaryBorderColor: #377F8E;
+        --btnSecondaryHoverBorderColor: #377F8E;
+        --btnLinkColor: #434445;
+        --btnLinkHoverColor: #377F8E;
+        --btnLinkTextDecoration: underline;
+        --btnLinkLabelIcon: "e91f";
+        --imageBorderRadius: 0px;
+        --gridItemBorderRadius: 0px;
+        --accordionBg: #FFFFFF;
+        --accordionColor: #434445;
+        --accordionBorderColor: #434445;
+        --accordionHeadBg: transparent;
+        --accordionHeadColor: #434445;
+        --miniBannerBg: #002d44;
+        --miniBannerBorderColor: #E5EDF1;
+        --cardsBg: #E5EDF1;
+        --cardsBorderColor: #E5EDF1;
+        --tabBg: #377F8E;
+        --tabColor: #FFFFFF;
+        --tabHoverBg: #96C2DB;
+        --tabHoverColor: #FFFFFF;
+        --tabActiveBg: #434445;
+        --tabActiveColor: #E5EDF1;
+        --tabFontFamily: 'Alegreya', serif;
+        --tabFontSize: 18px;
+        --tabFontWeight: 400;
+        --tabActiveFontWeight: 400;
+        --tabFontStyle: normal;
+        --tabTextTransform: inherit;
+        --tabTextDecoration: inherit;
+        --overlayBg: rgba(229, 237, 241, 0.5);
+        --overlayColor: #434445;
+        --imageBackdropFilter: 1px;
+        --sliderNavColor: #FFFFFF;
+        --sliderNavBg: #377F8E;
+        --sliderIndicatorsBg: #377F8E;
+        --sliderIndicatorsColor: #E5EDF1;
+        --widgetTintBackgroundColor: #e0e0e0;
+        --storeBodyBg: #FFFFFF;
+        --storeBodyColor: #434445;
+        --storeBtnPrimaryBg: #377F8E;
+        --storeBtnPrimaryHoverBg: #FFFFFF;
+        --storeBtnPrimaryColor: #FFFFFF;
+        --storeBtnPrimaryHoverColor: #377F8E;
+        --storeBtnPrimaryBorderColor: #377F8E;
+        --storeBtnPrimaryHoverBorderColor: #377F8E;
+        --storeBtnPrimaryDisabledBg: #E5EDF1;
+        --storeBtnPrimaryDisabledColor: #434445;
+        --storeBtnSecondaryBg: #FFFFFF;
+        --storeBtnSecondaryHoverBg: #377F8E;
+        --storeBtnSecondaryColor: #377F8E;
+        --storeBtnSecondaryHoverColor: #FFFFFF;
+        --storeBtnSecondaryBorderColor: #377F8E;
+        --storeBtnSecondaryHoverBorderColor: #377F8E;
+        --storeBtnSecondaryDisabledBg: #FFFFFF;
+        --storeBtnSecondaryDisabledColor: #434445;
+        --blogBodyBg: #FFFFFF;
+        --blogBodyColor: #000000;
+        --blogBtnPrimaryBg: #000000;
+        --blogBtnPrimaryHoverBg: #000000;
+        --blogBtnPrimaryColor: #FFFFFF;
+        --blogBtnPrimaryHoverColor: #FFFFFF;
+        --blogBtnPrimaryBorderColor: #000000;
+        --blogBtnPrimaryHoverBorderColor: #000000;
+        --blogBtnPrimaryDisabledBg: #E5EDF1;
+        --blogBtnPrimaryDisabledColor: #434445;
+        --blogBtnSecondaryBg: #FFFFFF;
+        --blogBtnSecondaryHoverBg: #FFFFFF;
+        --blogBtnSecondaryColor: #000000;
+        --blogBtnSecondaryHoverColor: #000000;
+        --blogBtnSecondaryBorderColor: #000000;
+        --blogBtnSecondaryHoverBorderColor: #000000;
+        --blogBtnSecondaryDisabledBg: #FFFFFF;
+        --blogBtnSecondaryDisabledColor: #434445;
+        --sliderLeftNavIcon: undefined;
+        --sliderRightNavIcon: undefined;
+        --sliderBottomLeftNavIcon: undefined;
+        --sliderBottomRightNavIcon: undefined;
+    }
+    </style>
+    <link rel="stylesheet" href="style.css"></head>
+
+<body class="kmb-site-body kmb-template-default kmb-site-default-language-en-us kmb-site-page-animation">
+    <div id="__nuxt">
+        <div id="kmb-site-layout" class="kmb-site kmb-site-wrapper kmb-site-image-filter-name-normal kmb-site-image-filter-id-1">
+            <!---->
+            <header id="kmb-header" class="kmb-site-header kmb-horizontal-header-menu kmb-horizontal-header-align-left-menu kmb-horizontal-left-header-menu">
+                <div class="kmb-site-header-container kmb-widget-container">
+                    <div class="kmb-header-row kmb-header-text">
+                        <div class="kmb-site-logo kmb-site-header-logo">
+                            <a aria-current="page" href="kmb-horizontal-menu-navbar-collapse" class="router-link-active router-link-exact-active kmb-logo-link kmb-logo-type-2 kmb-header-logo-link">
+                                <span class="kmb-site-logo-txt kmb-site-default-text">Atomnova</span>
+                            </a>
+                        </div>
+                        <div class="kmb-header-menu-extras">
+                            <ul class="kmb-menu-extras">
+                                <!---->
+                                <!---->
+                                <!---->
+                                <li class="kmb-extras-item kmb-extras-item-has-sub-menu kmb-extras-contact-item">
+                                    <span class="kmb-extras-item-icon kmb-extras-contact-item-icon">
+                                        <i class="fa-solid fa-envelope "></i>
+                                        <i class="kmb-site-icon-angle-down fa-solid fa-envelope"></i>
+                                    </span>
+                                    <ul class="kmb-extras-item-menu kmb-extras-contacts-list kmb-site-default-dir">
+                                        <!--[-->
+                                        <!---->
+                                        <li class="kmb-extras-contacts-list-item kmb-extras-contacts-list-emails-item flex mb-6">
+                                            <span class="kmb-extras-inner-contact-item-icon">
+                                            </span>
+                                            <ul class="kmb-extras-inner-conatcts-list kmb-extras-emails-list mx-2">
+                                                <!--[-->
+                                                <li class="kmb-extras-inner-contact-item kmb-phone-item mb-4">
+                                                    <a href="#"><span><i class="fa-solid fa-envelope-open"></i></span> atarimenna44@gmail.com</a>
+                                                    <p>Or</p>
+                                                    <a href="#"><span><i class="fa-solid fa-envelope-open"></i></span> Shathazaherali2010@gmail.com</a>
+                                                </li>
+                                                <!--]-->
+                                            </ul>
+                                        </li>
+                                        <!---->
+                                        <!--]-->
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!--[-->
+            <!--[-->
+            <div class="kmb-site-page">
+                <!--[-->
+                <!--nuxt-delay-hydration-component-->
+                <!--[-->
+                <div class="kmb-site-page-content kmb-site-page-id-1964870 kmb-site-page-type-id-1 kmb-site-page-type-home" data-page-template-type="1">
+                    <!--[-->
+                    <div class="kmb-page-widget banner banner-type-t1 banner-t1-v4" style="padding-top:0px;padding-bottom:0px;" id="BannerSettingsT1V4_9469031025831">
+                        <!--[-->
+                        <div class="kmb-widget-container-fluid">
+                            <!--[-->
+                            <div class="kmb-widget-content">
+                                <div class="kmb-banner-main-bg">
+                                    <div class="kmb-widget-bg-image-item kmb-parallax-wrapper kmb-widget-banner-item kmb-widget-hidden-bg-image kmb-widget-bg-image-with-overlay bg-center w-full kmb-widget-banner-item banner-no-radius kmb-widget-bg-image-flex-content kmb-widget-bg-image-flex-content kmb-widget-image-item-default-rounded-left flex items-center banner-bg h-full bg-center" style="min-height:720px;">
+                                        <div class="kmb-widget-bg-image" data-height="720">
+                                            <img onerror="this.setAttribute(&#39;data-error&#39;, 1)" alt="nova exoplanet" loading="lazy" data-nuxt-img srcset="/_ipx/f_webp&amp;q_90/https://img2.hocoos.com/cache/img-pack/1484/w-1135/h-720/ww-1135/wh-720/img-pack/1484/pexels-polina-tankilevitch-6929153.jpg 1x, /_ipx/f_webp&amp;q_90/https://img2.hocoos.com/cache/img-pack/1484/w-1135/h-720/ww-1135/wh-720/img-pack/1484/pexels-polina-tankilevitch-6929153.jpg 2x" style="transform:translate3d(0, 0%, 0) scale(1.3);" class="kmb-bg-widget-image-item kmb-widget-bg-parallax-image" data-width="1135" data-height="720" src="/_ipx/f_webp&amp;q_90/https://img2.hocoos.com/cache/img-pack/1484/w-1135/h-720/ww-1135/wh-720/img-pack/1484/pexels-polina-tankilevitch-6929153.jpg">
+                                        </div><!--[-->
+                                            <div class="kmb-widget-overlay kmb-widget-bg-image-overlay-content">
+                                             <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/227aa84a-3013-4dd4-a697-9417df6a1b86/d2ztbef-4ac75fe8-f91b-4dd3-ae92-b797cb068ef0.jpg/v1/fill/w_1280,h_720,q_75,strp/exoplanet_concept_by_nethskie_d2ztbef-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvMjI3YWE4NGEtMzAxMy00ZGQ0LWE2OTctOTQxN2RmNmExYjg2XC9kMnp0YmVmLTRhYzc1ZmU4LWY5MWItNGRkMy1hZTkyLWI3OTdjYjA2OGVmMC5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.a1k7YvM-oCM7ZPCQu2BJDB7xbrSUPX236HcaK7EBQsU" alt="">
+                                                    <!--[-->
+                                                    <!--[-->
+                                                    <div class="kmb-widget-bannner-container kmb-widget-bannner-dymanic-container w-full flex justify-center lg_justify-start lg_px-0 px-5 kmb-widget-col-lg-pl-12">
+                                                        <div class="kmb-widget-banner-content kmb-widget-banner-content-bg py-6 md_py-10 md_px-6 w-full kmb-widget-mini-banner-bg kmb-widget-banner-box text-center">
+                                                            <div class="kmb-widget-aligment-wrap">
+                                                                <!--[-->
+                                                                <h1 class="kmb-widget-rich-text kmb-widget-title kmb-widget-title-h1 kmb-widget-title-no-divider kmb-banner-title" data-max-chars="150">
+                                                                    <span data-text-size="48" style="font-size: 42px;" class="kmb-live-tag-label kmb-rich-text-paragraph">Chronicles of exoplanet exploration</span>
+                                                                </h1>
+                                                                <div class="kmb-widget-rich-text kmb-widget-description kmb-widget-text-body2 kmb-banner-description" data-max-chars="1200">Explore the mission and values of Nova Exoplanet, an educational blog delving into celestial wonders.</div>
+                                                                <div class="kmb-widget-btn-group kmb-widget-btn-group-center">
+                                                                   
+                                                                </div>
+                                                                <!--]-->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--]-->
+                                                    <!--]-->
+                                                </div>
+                                            </div>
+                                            <!--]-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--]-->
+                        </div>
+                        <!--]-->
+                    </div>
+                    <div id="kmb-page-widget" class="kmb-page-widget text text-t1 text-t1-v2" style="padding-top:38px;padding-bottom:38px;" id="TextSettingsT1V2_3792296453541">
+                        <!--[-->
+                        <div class="kmb-widget-container">
+                            <!--[-->
+                            <div class="kmb-widget-content kmb-widget-info-left">
+                                <div class="kmb-widget-aligment-wrap kmb-widget-text-content">
+                                    <!--[-->
+                                    <div class="kmb-widget-titles-info">
+                                        <!---->
+                                        <h2 class="kmb-widget-rich-text kmb-widget-title kmb-widget-title-h1 kmb-widget-title-no-divider" data-max-chars="150">
+                                            <span class="kmb-live-tag-label kmb-rich-text-paragraph">WHAT IS EXOPLANET EXPLORATION</span>
+                                        </h2>
+                                    </div>
+                                    <div class="kmb-widget-rich-text kmb-widget-description kmb-widget-text-body2 kmb-text-description" data-max-chars="9999999">
+                                        <p class="kmb-live-tag-label kmb-rich-text-paragraph">
+                                            <span style="color: var(--sds-color-text-primary-2); text-decoration: inherit;" class="kmb-color-tag-label">An exoplanet, or extrasolar planet, is a planet that orbits a star outside our solar system. These planets can vary widely in terms of size, composition, and distance from their host stars. Some exoplanets are similar to Earth, while others may be gas giants like Jupiter. The discovery of exoplanets has expanded our understanding of the universe and the potential for life beyond Earth. As of now, thousands of exoplanets have been confirmed, and astronomers continue to search for new ones using various detection methods, including the transit method and radial velocity method.</span>
+                                        </p>
+                                        <p class="kmb-live-tag-label kmb-rich-text-paragraph"></p>
+                                        <p class="kmb-live-tag-label kmb-rich-text-paragraph">
+                                            <br>
+                                        </p>
+                                    </div>
+                                    <!---->
+                                    <!--]-->
+                                </div>
+                            </div>
+                            <!--]-->
+                        </div>
+                        <!--]-->
+                    </div>
+                    <div id="kmb-page-widget" class="kmb-page-widget text text-t1 text-t1-v2" style="padding-top:38px;padding-bottom:38px; text-align: center;" id="TextSettingsT1V2_3792296453541">
+                     <!--[-->
+                     <div class="kmb-widget-container">
+                         <!--[-->
+                         <div class="kmb-widget-content kmb-widget-info-center">
+                             <div class="kmb-widget-aligment-wrap kmb-widget-text-content">
+                                 <!--[-->
+                                 <div class="kmb-widget-titles-info">
+                                     <!---->
+                                     <h2 class="kmb-widget-rich-text kmb-widget-title kmb-widget-title-h1 kmb-widget-title-no-divider" data-max-chars="150">
+                                         <span class="kmb-live-tag-label kmb-rich-text-paragraph">Types of Exoplanets</span>
+                                     </h2>
+                                 </div>
+                         </div>
+                         <!--]-->
+                     </div>
+                     <!--]-->
+                 </div>
+                    <div class="kmb-page-widget widget-blog-post widget-blog widget-blog-post-list widget-blog-post-list-v9" style="padding-top:38px;padding-bottom:38px;" id="BlogSettingsT1V9_14183066890581">
+                        <!--[-->
+                        <div class="kmb-widget-container">
+                            <!--[-->
+                                <div class="imgs">
+                                 <div class="imgDiv">
+                                  <span>HR 8799c</span>
+                                  <p class="">Gas giant</p>
+                                 <img src="Screenshot 2024-10-04 at 3.58.39 PM.png" alt=""></div>
+                                  <div class="imgDiv">
+                                 <span>GJ 436b</span>
+                                 <p>Neptunian</p>
+                                <img src="Screenshot 2024-10-04 at 3.59.39 PM.png" alt=""></div>
+                                 <div class="imgDiv">
+                                 <span>55 Cancri e</span>
+                                 <p>Super-Earth</p>
+                                <img src="Screenshot 2024-10-04 at 4.00.21 PM.png" alt=""></div>
+                                 <div class="imgDiv">
+                                  <span>Proxima Centauri b</span>
+                                  <p class="">Terrestrial</p>
+                                 <img src="Screenshot 2024-10-04 at 4.00.52 PM.png" alt=""></div>
+                                </div>
+            <!--]-->
+            <!--]-->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <span></span>
+            <!---->
+            <!---->
+            <!---->
+        </div>
+    </div>
+    <div id="kmb-page-widget" class="kmb-page-widget text text-t1 text-t1-v2" style="padding-top:38px;padding-bottom:38px;" id="TextSettingsT1V2_3792296453541">
+     <!--[-->
+     <div class="kmb-widget-container">
+         <!--[-->
+         <div class="kmb-widget-content kmb-widget-info-left">
+             <div class="kmb-widget-aligment-wrap kmb-widget-text-content">
+                 <!--[-->
+                 <div class="kmb-widget-titles-info" style="text-align: right;">
+                     <!---->
+                     <h2 class="kmb-widget-rich-text kmb-widget-title kmb-widget-title-h1 kmb-widget-title-no-divider" data-max-chars="150" style="text-align: right;">
+                         <span class="kmb-live-tag-label kmb-rich-text-paragraph" style="text-align: right;">How to make Exoplanet exploration fun for student</span>
+                     </h2>
+                 </div>
+                     <p class="kmb-live-tag-label kmb-rich-text-paragraph" style="text-align: right;">
+                         <span style="color: var(--sds-color-text-primary-2);text-align: right; text-decoration: inherit;" class="kmb-color-tag-label">To make exoplanets fun for children, turn the learning into a space adventure where they “travel” to different planets, imagining what it would be like to live on them. Use colorful visuals and videos showing planets with features like rings, oceans, or extreme weather. Encourage creativity by having them design their own exoplanet, complete with unique creatures or environments. Incorporate games like planet trivia or puzzles where they can match planets to fun facts. Finally, tell stories about space explorers discovering new worlds, sparking their imagination while teaching them about real exoplanets. <span><a href="https://www.nasa.gov/interactives/">Explore</a></span></span>
+                     </p>
+                     <p class="kmb-live-tag-label kmb-rich-text-paragraph" ></p>
+                     <p class="kmb-live-tag-label kmb-rich-text-paragraph" >
+                         <br>
+                     </p>
+                 </div>
+                 <!---->
+                 <!--]-->
+             </div>
+         </div>
+         <!--]-->
+     </div>
+     <!--]-->
+ </div>
+ <div id="kmb-page-widget" class="kmb-page-widget text text-t1 text-t1-v2" style="padding-top:38px;padding-bottom:38px;" id="TextSettingsT1V2_3792296453541">
+  <!--[-->
+  <div class="kmb-widget-container">
+      <!--[-->
+      <div class="kmb-widget-content kmb-widget-info-left">
+          <div class="kmb-widget-aligment-wrap kmb-widget-text-content">
+              <!--[-->
+              <div class="kmb-widget-titles-info">
+                  <!---->
+                  <h3 class="kmb-widget-rich-text kmb-widget-title kmb-widget-title-h3 kmb-widget-title-no-divider" data-max-chars="150">
+                      <span class="kmb-live-tag-label kmb-rich-text-paragraph">Pictures of more Exoplanets ✨⭐️</span>
+                  </h3>
+              <!---->
+              <!--]-->
+          </div>
+      </div>
+      <!--]-->
+  </div>
+  <!--]-->
+</div>
+ <div class="moreImgs">
+  <div class="album">
+   <img src="https://eyes.nasa.gov/apps/exo/assets/image/thumbnail/exoplanet/55-cnc-e-list.webp" alt="">
+  <img src="https://eyes.nasa.gov/apps/exo/assets/image/thumbnail/exoplanet/terrestrial-list.webp" alt="">
+ </div>
+  </div>
+    <div id="teleports"></div>
+<footer>
+ All copyrights belong to Mn_ & Shatha_ali323 
+</footer>
+    </body>
+    </html>
